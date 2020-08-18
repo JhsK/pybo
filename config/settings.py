@@ -26,7 +26,7 @@ SECRET_KEY = 'n^(ml-8get420b7qkyicl3*h1y*1!qti5@+v-(c#*2c$uy7lcy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['13.209.100.175']
 
 
 # Application definition
