@@ -16,12 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from pybo.views import base_views
+from graphene_django.views import GraphQLView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('pybo/', include('pybo.urls')),
     path('common/', include('common.urls')),
     path('', base_views.index, name='index'),
+    path('graphql/', GraphQLView.as_view(graphiql=True)),
 ]
 
 handler404 = 'common.views.page_not_found'

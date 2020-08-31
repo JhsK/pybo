@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pybo.apps.PyboConfig',
     'common.apps.CommonConfig',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
